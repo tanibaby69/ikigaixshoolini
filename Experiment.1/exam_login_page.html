@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Examination Login</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Electrolize', sans-serif;
+    }
+
+    body {
+      background: #000000;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 420px;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(14px);
+      border-radius: 20px;
+      padding: 35px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+      color: white;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+    .input-group {
+      margin-bottom: 18px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .input-group label {
+      margin-bottom: 6px;
+      font-size: 14px;
+      opacity: 0.85;
+    }
+
+    .input-group input {
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.12);
+      color: white;
+      font-size: 15px;
+    }
+
+    .input-group input:focus {
+      outline: 2px solid #9b4dff;
+    }
+
+    button {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      width: 100%;
+      margin-top: 10px;
+      padding: 12px;
+      border: 2px solid transparent;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 600;
+      background: linear-gradient(135deg, #a855f7, #5eead4) padding-box,
+                  linear-gradient(135deg, #a855f7, #5eead4) border-box;
+      background-clip: padding-box, border-box;
+      color: white;
+      cursor: pointer;
+      transition: 0.25s ease;
+    }
+
+    button:hover {
+      transform: translateY(-3px);
+      border-color: white;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+    }
+
+    .note {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      margin-top: 15px;
+      font-size: 13px;
+      opacity: 0.7;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Examination Login</h2>
+
+    <form>
+      <div class="input-group">
+        <label>Username</label>
+        <input type="text" placeholder="Enter your Username" required />
+      </div>
+
+      <div class="input-group">
+        <label>Password</label>
+        <input type="password" placeholder="Enter your Password" required />
+      </div>
+
+      <button type="submit">Login</button>
+
+      <p class="note">Ensure your credentials are correct before logging in.</p>
+    </form>
+  </div>
+</body>
+</html>
